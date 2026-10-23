@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+cache/
+.DS_Store
+gtfs-*.zip
+last-modified.txt
+*.osm.pbf
