@@ -26,12 +26,14 @@ ROUTE_SHORT_NAMES = {
     "3510": "10",
     "3601": "SBC",
     "3603": "SMPV",
+    "3314": "LG14",
+    "3315": "LG15",
 }
 
 # Ordre des lignes (route_sort_order et tri de routes.txt) : chaque motif (expression régulière sur le route_id) forme un
 # groupe, trié par route_id ; les lignes qui ne correspondent à aucun motif passent à la fin
 ROUTE_ORDER = [
-    "1", "2", "3", "4", "A", "B", "C", "D", "10", "11", "12", "14", "3314", "3315",
+    "1", "2", "3", "4", "A", "B", "C", "D", "10", "11", "12", "14",
     r"S.*", r"18H.*", r"AR.*", r"CH.*", r"LG.*", r"VI.*",
 ]
 
@@ -51,10 +53,12 @@ ROUTES = {
     "B": {"route_text_color": "000000", "route_long_name": "Domagné <> Châteaubourg Gare Nord"},
     "C": {"route_text_color": "FFFFFF", "route_long_name": "Broons-sur-Vilaine <> Châteaubourg Gare Nord"},
     "D": {"route_text_color": "FFFFFF", "route_long_name": "ZA Gaultière - Galmandière <> Châteaubourg Gare Nord"},
-    "10": {"route_long_name": "Rannée <> Vitré"},
-    "11": {"route_long_name": "La Guerche-de-Bretagne <> Vitré"},
+    "10": {"route_text_color": "FFFFFF", "route_long_name": "Rannée <> Vitré"},
+    "11": {"route_text_color": "FFFFFF", "route_long_name": "La Guerche-de-Bretagne <> Vitré"},
     "12": {"route_long_name": "Val d'Izé <> Vitré"},
-    "14": {"route_long_name": "Le Pertre <> Vitré"},
+    "14": {"route_text_color": "FFFFFF", "route_long_name": "Le Pertre <> Vitré"},
+    "LG14": {"route_color": "00FF40"},
+    "LG15": {"route_color": "00FF40"},
     "SBC": {"route_long_name": "Spécial Broons-Châteaubourg"},
     "SCH": {"route_long_name": "Spécial La Clé des Champs <> Châteaubourg Collèges"},
     "SMPV": {"route_long_name": "Spécial Montreuil-sous-Pérouse <> Gare SNCF"},
