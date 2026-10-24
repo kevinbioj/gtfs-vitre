@@ -6,7 +6,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 from . import gtfs
-from .steps import agency, headsigns, routes, shapes
+from .steps import agency, headsigns, routes, shapes, stops
 
 
 @contextmanager
@@ -29,6 +29,8 @@ def main():
         agency.apply(feed)
     with step("Lignes"):
         feed = routes.apply(feed)
+    with step("Arrêts"):
+        stops.apply(feed)
     with step("Girouettes"):
         headsigns.apply(feed)
     with step("Suppression des tracés"):
